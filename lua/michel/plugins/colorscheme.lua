@@ -7,6 +7,18 @@ return {
       flavor = "frappe"
     })
 
+    integrations = {
+      nvimtree = true,
+      require('lualine').setup {
+        options = {
+            theme = "catppuccin"
+            -- ... the rest of your lualine config
+        },
+      },
+    }
+
+    
+
     vim.cmd("colorscheme catppuccin")
   end
 }
