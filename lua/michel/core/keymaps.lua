@@ -22,13 +22,13 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 -- Map leader + 1-9 to switch to tab 1-9
+
 for i = 1, 9 do
   vim.keymap.set(
     'n',
-    '<leader>' .. i .. '',
+    '<leader>' .. i,
     ':tabn ' .. i .. '<CR>',
-    { silent = true, desc = 'Move to tab ' .. i .. '' }
+    { silent = true, desc = 'which_key_ignore' } -- which_key_irgonre makes them not show up in which-key.nvim
   )
 end
-
 
