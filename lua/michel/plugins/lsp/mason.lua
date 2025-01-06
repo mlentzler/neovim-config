@@ -43,6 +43,10 @@ return {
 				"stylua", -- lua formatter
 				"isort", -- python formatter
 				"black", -- python formatter
+				"pylint", -- python linter
+				"eslint_d", -- ES Lint
+				"golangci-lint", -- Go linter
+				"regal", -- rego linter
 			},
 		})
 	end,
